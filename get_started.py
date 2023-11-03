@@ -7,7 +7,7 @@ processor = ViltProcessor.from_pretrained("dandelin/vilt-b32-finetuned-vqa")
 model = ViltForQuestionAnswering.from_pretrained("dandelin/vilt-b32-finetuned-vqa")
 
 # prepare image + question
-url = "http://pumpkin_spice_latte.jpg"
+url = "https://raw.githubusercontent.com/codelabspro/OntologyAI/main/datasets/pumpkin_spice_latte.jpg"
 image = Image.open(requests.get(url, stream=True).raw)
 
 text = "Describe what is in the picture"
